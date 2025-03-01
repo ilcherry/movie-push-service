@@ -1,0 +1,28 @@
+{
+  "name": "movie-push-service",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "a simple movie service crawler",
+  "keywords": [
+    "movie",
+    "douban",
+    "crawler",
+    "nodemailer",
+    "puppeteer"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "start": "node bootstrap.js"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "classnames": "^2.5.1",
+    "clsx": "^2.1.1",
+    "ejs": "^3.1.10",
+    "nodemailer": "^6.9.16",
+    "puppeteer": "^24.1.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.4.2"
+  }
+}

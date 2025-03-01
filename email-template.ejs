@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>即将上映电影</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #4caf50;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        font-size: 24px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+      th,
+      td {
+        padding: 12px;
+        text-align: center;
+        border: 1px solid #ddd;
+        font-size: 16px;
+      }
+      th {
+        background-color: #4caf50;
+        color: white;
+      }
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+      tr:hover {
+        background-color: #ddd;
+      }
+      .container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <header>即将上映电影</header>
+
+    <div class="container">
+      <table>
+        <thead>
+          <tr>
+            <th>上映日期</th>
+            <th>片名</th>
+            <th>类型</th>
+            <th>制片国家 / 地区</th>
+            <th>想看</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% movies.forEach(function(movie) { %>
+          <tr>
+            <td><%= movie.上映日期 %></td>
+            <td><%= movie.片名 %></td>
+            <td><%= movie.类型 %></td>
+            <td><%= movie["制片国家 / 地区"] %></td>
+            <td><%= movie.想看 %></td>
+          </tr>
+          <% }); %>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
