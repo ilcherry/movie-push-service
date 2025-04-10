@@ -12,7 +12,8 @@
   ],
   "license": "MIT",
   "scripts": {
-    "start": "node bootstrap.js"
+    "start": "node bootstrap.js",
+    "push:weather": "node pushWeather.js"
   },
   "dependencies": {
     "cheerio": "^1.0.0",
