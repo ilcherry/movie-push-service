@@ -13,6 +13,8 @@ const StatusMapping = {
   "Heavy Rain": "大雨",
   "Moderate Rain": "中雨",
   Sunny: "晴天",
+  Clear: "放晴",
+  "Light Rain": "小雨",
 };
 
 async function getWeather() {
@@ -44,6 +46,8 @@ if (weatherResponse.code === "200") {
       textNight: item.textNight,
     };
   });
+
+  console.log(result);
 
   emailPush(result);
 }
